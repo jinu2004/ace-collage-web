@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); */
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family:'Space Grotesk', Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: "inter";
+  src: url(fonts/inter.ttf);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+@font-face {
+  font-family: "Bangers";
+  src: url(fonts/BangersRegular.ttf);
+}
+
+@font-face {
+  font-family: "doubleXcomp";
+  src: url(fonts/XCompany-GOR9y.ttf);
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url(fonts/Oswald.ttf);
+}
+
+
+@font-face {
+  font-family: "Jersey25";
+  src: url(fonts/Jersey25-Regular.ttf);
+}
+
+/* @font-face {
+  font-family: "Space Grotesk";
+  src: url(fonts/SpaceGrotesk-Light.otf) format("opentype");
+} */
+
+
+@font-face {
+  font-family: "Special Gothic Condensed One";
+  src: url(fonts/SpecialGothicCondensedOneRegular.ttf);
+}
+
