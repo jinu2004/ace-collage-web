@@ -11,7 +11,7 @@ export default function Herosection() {
                 autoPlay
                 muted
                 loop
-                className='w-full h-screen object-cover absolute top-0 left-0 inset-0 z-0 opacity-50 pointer-events-none'
+                className='w-full h-screen object-cover absolute top-8 left-0 inset-0 z-0 opacity-50 pointer-events-none'
             />
 
             <div className='relative z-10'>

@@ -168,7 +168,7 @@ export default function CollageActivity() {
       color: "#fff",
       height: 80,
       width: 80,
-      padding:"2px",
+      padding: "2px",
       fontSize: "18px",
       x: mouseXPosition - 32,
       y: mouseYPosition - 32
@@ -224,7 +224,7 @@ export default function CollageActivity() {
           <div
             className='flex-col flex w-full border-solid scrollbar-hide'
             onClick={() => setHovered(item.label)}
-            onMouseEnter={Enter}
+            onMouseEnter={() => { Enter; setHovered(item.label) }}
             onMouseLeave={Leave}
 
           >
@@ -246,10 +246,9 @@ export default function CollageActivity() {
               </Marquee>
             </div>
             <div
-              className={`w-full px-6 lg:px-8 bg-indigo-100 text-black transition-all duration-300 h-fit ${hovered === item.label ? 'block' : 'hidden'
+              className={`w-full px-6 lg:px-8 bg-indigo-100 text-black transition-all duration-1000 h-fit ${hovered === item.label ? 'block opacity-100' : 'hidden opacity-0'
                 }`}
             >
-
 
               <div className='mx-auto grid w-full grid-cols-1 gap-x-10 lg:mx-auto lg:max-w-7xl lg:grid-cols-2 h-fit mt-5'>
 
